@@ -1,84 +1,98 @@
 # BriX: A Modern AI Business Builder 🚀
 
-![Banner Image for BriX](banner-image-url)  <!-- Add a relevant banner image -->
+![Banner Image for BriX](https://cdn.discordapp.com/attachments/1212099014745391207/1235335524005318776/528cc757-b70e-470b-8526-6d2be483d58f.png?ex=6634a81c&is=6633569c&hm=6ef640338d195cf5eae29a99f7a4ae067bc982bcdfb2a3b9080d60847f347238&)  <!-- Add a relevant banner image -->
 
-BriX is an advanced AI Business Builder designed to redefine the way businesses operate. By integrating state-of-the-art AI technology, BriX offers a comprehensive toolkit that caters to a wide array of business needs, setting a new standard in business innovation.
+# Brix-Pakverse Documentation
 
-## 🌟 Core Features of BriX
+## Overview
 
-- **AI-Driven Market Analysis:** BriX employs sophisticated AI algorithms to analyze market trends and consumer behaviors. For instance, a retail business can use BriX to understand purchasing patterns, which can aid in inventory management and targeted promotions.
+Brix-Pakverse is an innovative AI-driven application designed to assist entrepreneurs in launching their businesses. By leveraging AI capabilities, the application interacts with users through a chatbot, refining and suggesting business-related parameters based on user input.
 
-- **Automated Customer Interactions:** BriX enhances customer engagement through AI-powered chatbots and support systems. These tools can handle inquiries, provide recommendations, and even support sales processes, as seen in e-commerce platforms for streamlined customer experiences.
+## Features
 
-- **Customized Business Solutions:** Recognizing that no two businesses are alike, BriX allows for the creation of tailor-made modules. For example, a logistics company could customize BriX to optimize its supply chain and distribution routes.
+- **Content Generation**: Generates detailed business content for various aspects like marketing strategies and legal issues once initial parameters are set.
+
+- **Automated Customer Interactions:** BriX enhances customer engagement through AI-powered chatbots and support systems. These tools continuously update and refine business parameters based on user feedback.
+
+- **Customized Business Solutions:** Recognizing that no two businesses are alike, BriX allows for the creation of tailor-made modules. It generates detailed business content for various aspects like marketing strategies and legal issues once initial parameters are set.
 
 - **Scalable Infrastructure:** As businesses grow, their needs evolve. BriX's scalable architecture ensures that businesses can expand their use of the platform without compromising performance, whether it's handling more users or integrating additional services.
 
 - **Intuitive User Experience:** Designed with a focus on usability, BriX features an easy-to-navigate interface, making advanced business analytics accessible to users of varying technical skills.
 
-- **Robust Data Security:** BriX prioritizes the protection of business data with industry-leading security measures, ensuring information is safe from unauthorized access and breaches.
 
-## 🚀 Detailed Examples and Solutions
+## Prerequisites
 
-### Case Study 1: Retail Business
+- Node.js
+- A modern browser
+- An account with Vercel for deployment
+- OpenAI API access for AI functionalities
 
-**Problem:** A retail chain struggles with stock management and personalized marketing.
+## Installation
 
-**BriX Solution:** Using BriX’s AI analytics, the company can predict product demand, manage stock levels efficiently, and tailor marketing campaigns to customer preferences, resulting in increased sales and reduced inventory costs.
+1. **Clone the repository:**
 
-### Case Study 2: Online Service Provider
+   ```bash
+   git clone https://github.com/Graphfied/2024-AI-Challenge-Pakverse-Brix.git
+   cd 2024-AI-Challenge-Pakverse-Brix
+   ```
 
-**Problem:** An online platform faces challenges in customer service and user engagement.
+2. **Install dependencies with PNPM:**
 
-**BriX Solution:** By implementing BriX’s automated customer interaction tools, the platform enhances its customer service efficiency and engagement, leading to improved customer satisfaction and retention.
+   ```bash
+   pnpm install
+   ```
 
-### Case Study 3: Manufacturing Industry
+3. **Environment Configuration:**
+   Create a `.env.local` file in the root of your project and populate it with the necessary environment variables:
+   ```plaintext
+   NEXT_PUBLIC_OPENAI_KEY=<your openai key>
+   NEXT_PUBLIC_ASSISTANT_ID=<your openai assistant id>
+   ```
 
-**Problem:** A manufacturer needs to optimize its production process and supply chain management.
+## Running the Application
 
-**BriX Solution:** BriX helps in streamlining production schedules based on market demand and optimizes supply chain logistics, thereby reducing operational costs and improving time-to-market.
+To run the application locally:
 
-## 🌟 Getting Started with BriX
+```bash
+pnpm run dev
+```
 
-### 🛠️ Installation
+**Don't forget Prisma**
 
-1. **Clone the Repository**
+```bash
+npx prisma generate
+```
 
-    ```bash
-    git clone <your-repo-link>
-    cd BriX-Pakverse
-    ```
+This will start the development server on [http://localhost:3000](http://localhost:3000). Open this address in your browser to start using the application.
 
-2. **Install Dependencies**
+## Application Workflow
 
-    Navigate to the BriX directory:
+1. **User Input Collection**: Users input their Business Location, Budget, and Idea.
+2. **Interaction with AI Chatbot**: The chatbot brain-storm with the users and refines these inputs and suggests additional business parameters.
+3. **Confirmation and Refinement**: Users interact with the chatbot to refine these parameters until satisfaction.
+4. **Final Submission**: Upon clicking the "GO" button, the refined data is used to generate detailed business content.
+5. **Content Generation**: The application uses AI models trained with various business-related texts to generate content for specific business aspects.
 
-    ```bash
-    npm install
-    ```
+## Tools Used
 
-3. **Launch Development Server**
+- **Frontend**: Next.js, TailwindCSS
+- **Backend**: Next.js API routes
+- **AI Tools**: OpenAI's GPT models
+- **Deployment**: Vercel
+- **Package Manager**: PNPM
 
-    Start your journey:
+## Deployment
 
-    ```bash
-    npm run dev
-    ```
+Deploy the application using Vercel. You can connect your GitHub repository to Vercel so that each push to your repository automatically deploys a new version of your site.
 
-## 🤝 Contributing
+1. **Log in to your Vercel account and create a new project.**
+2. **Connect your repository and configure build settings as follows:**
+   - Build Command: `pnpm build`
+   - Output Directory: `out`
+3. **Add the same environment variables used locally to your Vercel project settings.**
 
-Contribute to the future of business management with BriX:
+## Conclusion
 
-1. **Fork the Repository**
-2. **Create a New Branch**
-3. **Submit a Pull Request**
+Brix-Pakverse offers a unique platform for entrepreneurs to refine their business ideas with the assistance of advanced AI technology. It simplifies the process of starting a business by providing tailored suggestions and generating necessary business documents.
 
-📜 Follow our [Code of Conduct](link-to-code-of-conduct) and [Contributing Guidelines](link-to-contributing-guidelines).
-
-## 📃 License
-
-BriX is open-source under the [MIT License](LICENSE.md).
-
----
-
-✨ Explore BriX: Where AI meets business innovation. ✨
