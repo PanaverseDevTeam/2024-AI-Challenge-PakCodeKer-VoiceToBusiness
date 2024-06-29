@@ -1,0 +1,18 @@
+box {
+  width: 600px;
+}
+
+.neon {
+  color: #fff;
+  text-shadow: 0 0 5px #3efdbd, 0 0 10px #3efdbd, 0 0 20px #3efdbd,
+    0 0 40px #3efdbd, 0 0 80px #3efdbd, 0 0 90px #3efdbd, 0 0 100px #3efdbd,
+    0 0 150px #3efdbd;
+}
+
+.prompt-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+  gap: 4px; /* Space between buttons */
+  padding: 16px; /* Padding around the grid */
+  margin-top: -56px; /* Adjust as per your layout needs */
+}
